@@ -55,7 +55,7 @@ header{ /*navBar place holder*/
 .gallery{ /*grid layout*/
   padding-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 25px;
   background-color: #eeeeee;
 }
@@ -91,7 +91,7 @@ header{ /*navBar place holder*/
   weight: 100%;
   opacity: 0;
   transition: .3s ease;
-  background-color: rgb(229, 229, 229, .95);
+  background-color: rgb(229, 229, 229, .70);
 }
 
 .tumbnail:hover .overlay{ /*opacity change animation*/
@@ -127,7 +127,7 @@ margin: auto;
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
-    max-width: 80%;
+    max-width: 70%;
   }
   .gallery{
     grid-template-columns: 1fr 1fr 1fr;
@@ -142,7 +142,7 @@ margin: auto;
 
 @media all and (max-width: 767px) {
   .container{
-    max-width: 90%;
+    max-width: 95%;
   }
   .gallery{
     grid-template-columns: 1fr 1fr;
