@@ -55,7 +55,7 @@ header{ /*navBar place holder*/
 .gallery{ /*grid layout*/
   padding-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 25px;
   background-color: #eeeeee;
 }
@@ -123,4 +123,26 @@ margin: auto;
 
 .footer a:hover{ /*text hover colour change*/
   color: #1089ff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 80%;
+  }
+  .gallery{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+  }
+  .gallery{
+    grid-template-columns: 1fr 1fr;
+  }
+  .mainNav{
+    margin-left: 10px;
+    font-size: 10px;
+  }
 }
