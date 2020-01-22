@@ -132,6 +132,21 @@ margin: auto;
   .gallery{
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .tumbnail{ /*place holder for the images*/
+    cursor: pointer;
+    position: relative;
+    background-color: #e5e5e5;
+    display: flex;
+  }
+
+  .tumbnail::before{ /*hack??*/
+    content: '';
+    padding-bottom: 100%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
   .mainNav li a{
     font-size: 15px;
   }
@@ -148,6 +163,21 @@ margin: auto;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
   }
+
+  .tumbnail{ /*place holder for the images*/
+    cursor: pointer;
+    position: relative;
+    background-color: #e5e5e5;
+    display: flex;
+  }
+
+  .tumbnail::before{ /*hack??*/
+    content: '';
+    padding-bottom: 100%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
   .mainNav li a{
     font-size: 15px;
   }
