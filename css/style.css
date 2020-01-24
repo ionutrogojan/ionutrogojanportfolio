@@ -11,7 +11,7 @@
   list-style: none;
 }
 
-body{ /*html page*/
+.bodyIndex{ /*html page*/
   background-color: #eeeeee;
   display: block;
 }
@@ -24,7 +24,7 @@ body{ /*html page*/
   background-color: #eeeeee;
 }
 
-header{ /*navBar place holder*/
+.headerIndex{ /*navBar place holder*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +106,7 @@ header{ /*navBar place holder*/
   padding-top: 50px;
   border-bottom: 1px solid #e5e5e5;
 }
-footer{ /*footer*/
+.footerIndex{ /*footer*/
   display: flex;
   flex-direction: column;
   height: 50px;
@@ -156,4 +156,20 @@ margin: auto;
   .mainNav li{
     margin-left: 30px;
   }
+}
+
+/* coming soon css */
+
+.bodyComingsoon{
+    background-color: #eeeeee;
+    display: block;
+}
+
+.comingsoon img{
+  max-width: 60%;
+  max-height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
