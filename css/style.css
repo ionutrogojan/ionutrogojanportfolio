@@ -52,11 +52,12 @@ header{ /*navBar place holder*/
   border-bottom: 1px solid #e5e5e5;
 }
 
-.gallery{ /*grid layout*/
+.gallery{ /*flex layout*/
   padding-top: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #eeeeee;
 }
 
@@ -64,14 +65,9 @@ header{ /*navBar place holder*/
   cursor: pointer;
   position: relative;
   background-color: #e5e5e5;
-  display: flex;
-}
-
-.tumbnail::before{ /*hack??*/
-  content: '';
-  padding-bottom: 100%;
-  display: inline-block;
-  vertical-align: top;
+  flex-basis: 31.8%;
+  height: 31.8%;
+  margin-bottom: 2.4%;
 }
 
 .preview{ /*the image*/
@@ -129,23 +125,6 @@ margin: auto;
   .container {
     max-width: 70%;
   }
-  .gallery{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .tumbnail{ /*place holder for the images*/
-    cursor: pointer;
-    position: relative;
-    background-color: #e5e5e5;
-    display: flex;
-  }
-
-  .tumbnail::before{ /*hack??*/
-    content: '';
-    padding-bottom: 100%;
-    display: inline-block;
-    vertical-align: top;
-  }
 
   .mainNav li a{
     font-size: 15px;
@@ -160,22 +139,15 @@ margin: auto;
     max-width: 95%;
   }
   .gallery{
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
   }
 
   .tumbnail{ /*place holder for the images*/
     cursor: pointer;
     position: relative;
     background-color: #e5e5e5;
-    display: flex;
-  }
-
-  .tumbnail::before{ /*hack??*/
-    content: '';
-    padding-bottom: 100%;
-    display: inline-block;
-    vertical-align: top;
+    flex-basis: 49.4%;
+    height: 49.4%;
+    margin-bottom: 1.2%;
   }
 
   .mainNav li a{
