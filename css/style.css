@@ -61,7 +61,7 @@ body{ /*html page*/
   background-color: #eeeeee;
 }
 
-.tumbnail{ /*place holder for the images*/
+.indexTumbnail{ /*place holder for the images*/
   cursor: pointer;
   position: relative;
   background-color: #e5e5e5;
@@ -90,7 +90,7 @@ body{ /*html page*/
   background-color: rgb(229, 229, 229, .70);
 }
 
-.tumbnail:hover .overlay{ /*opacity change animation*/
+.indexTumbnail:hover .overlay{ /*opacity change animation*/
   opacity: 1;
 }
 
@@ -119,41 +119,6 @@ margin: auto;
 
 .footer a:hover{ /*text hover colour change*/
   color: #1089ff;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    max-width: 70%;
-  }
-
-  .mainNav li a{
-    font-size: 15px;
-  }
-  .mainNav li{
-    margin-left: 60px;
-  }
-}
-
-@media all and (max-width: 767px) {
-  .container{
-    max-width: 95%;
-  }
-
-  .tumbnail{ /*place holder for the images*/
-    cursor: pointer;
-    position: relative;
-    background-color: #e5e5e5;
-    flex-basis: 49.4%;
-    height: 49.4%;
-    margin-bottom: 1.2%;
-  }
-
-  .mainNav li a{
-    font-size: 15px;
-  }
-  .mainNav li{
-    margin-left: 30px;
-  }
 }
 
 /* coming soon css */
@@ -221,4 +186,73 @@ margin: auto;
   height: 48%;
   margin-bottom: 4%;
   background-color: #e5e5e5;
+}
+
+ /* Media queries */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* page width */
+  .container {
+    max-width: 70%;
+  }
+
+      /* Header */
+  .mainNav li a{
+    font-size: 15px;
+  }
+  .mainNav li{
+    margin-left: 60px;
+  }
+
+  .contactTitle{
+    font-size: 22.4px;
+  }
+
+  .contactText{
+    font-size: 14px;
+  }
+
+  .contactInfo{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  /* page width */
+  .container{
+    max-width: 95%;
+  }
+
+  .indexTumbnail{ /*place holder for the images*/
+    cursor: pointer;
+    position: relative;
+    background-color: #e5e5e5;
+    flex-basis: 49.4%;
+    height: 49.4%;
+    margin-bottom: 1.2%;
+  }
+
+  .mainNav li a{
+    font-size: 15px;
+  }
+  .mainNav li{
+    margin-left: 30px;
+  }
+
+  .contactTitle{
+    font-size: 19.5px;
+  }
+
+  .contactText{
+    font-size: 12px;
+  }
+
+  .contactInfo{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
