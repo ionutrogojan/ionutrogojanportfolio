@@ -11,7 +11,7 @@
   list-style: none;
 }
 
-.bodyIndex{ /*html page*/
+body{ /*html page*/
   background-color: #eeeeee;
   display: block;
 }
@@ -52,7 +52,7 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
-.gallery{ /*flex layout*/
+.category{ /*flex layout*/
   padding-top: 50px;
   display: flex;
   flex-direction: row;
@@ -106,7 +106,7 @@
   padding-top: 50px;
   border-bottom: 1px solid #e5e5e5;
 }
-.footerIndex{ /*footer*/
+footer{ /*footer*/
   display: flex;
   flex-direction: column;
   height: 50px;
@@ -138,8 +138,6 @@ margin: auto;
   .container{
     max-width: 95%;
   }
-  .gallery{
-  }
 
   .tumbnail{ /*place holder for the images*/
     cursor: pointer;
@@ -160,11 +158,6 @@ margin: auto;
 
 /* coming soon css */
 
-.bodyComingsoon{
-    background-color: #eeeeee;
-    display: block;
-}
-
 .comingsoon img{
   max-width: 60%;
   max-height: 60%;
@@ -172,4 +165,60 @@ margin: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* contact css */
+
+.contactContainer{
+  padding-top: 50px;
+  height: 72vh;
+  display: flex;
+  position: relative;
+  background-color: #eeeeee;
+  line-height: 1.5;
+}
+
+.contactInfoWrap{
+  width: 50%;
+  display: block;
+  position: relative;
+}
+
+.contactInfo{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.contactTitle{
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+
+.contactLinkWrap{
+  width: 50%;
+  position: relative;
+}
+
+.contactLink{
+width: 60%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.contactTumbnail{
+  cursor: pointer;
+  position: relative;
+  flex-basis: 48%;
+  height: 48%;
+  margin-bottom: 4%;
+  background-color: #e5e5e5;
 }
