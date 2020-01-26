@@ -21,15 +21,13 @@ body{ /*html page*/
   height: 100%;
   margin: 10px auto;
   padding: 0;
-  background-color: #eeeeee;
 }
 
-.headerIndex{ /*navBar place holder*/
+.header{ /*navBar place holder*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
-  background-color: #eeeeee;
 }
 
 .logo{ /*the logo*/
@@ -52,13 +50,14 @@ body{ /*html page*/
   border-bottom: 1px solid #e5e5e5;
 }
 
+    /* ========================Index============================= */
+
 .category{ /*flex layout*/
   padding-top: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #eeeeee;
 }
 
 .indexTumbnail{ /*place holder for the images*/
@@ -121,7 +120,7 @@ margin: auto;
   color: #1089ff;
 }
 
-/* coming soon css */
+    /* ========================404============================= */
 
 .comingsoon img{
   max-width: 60%;
@@ -132,14 +131,13 @@ margin: auto;
   transform: translate(-50%, -50%);
 }
 
-/* contact css */
+    /* ========================Contact============================= */
 
 .contactContainer{
   padding-top: 50px;
   height: 72vh;
   display: flex;
   position: relative;
-  background-color: #eeeeee;
   line-height: 1.5;
 }
 
@@ -189,13 +187,58 @@ margin: auto;
   background-color: #e5e5e5;
 }
 
- /* Media queries */
+    /* ========================About============================= */
+
+.aboutContainer{
+  padding-top: 50px;
+  height: 72vh;
+  display: flex;
+  position: relative;
+  line-height: 1.5;
+  justify-content: space-between;
+}
+
+.imageWrap{
+  width: 47.5%;
+  display: block;
+  position: relative;
+}
+
+.aboutImage{
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #e5e5e5;
+}
+
+.aboutInfo{
+  width: 47.5%;
+  display: block;
+  position: relative;
+}
+
+.portfolioLink{
+  background-color: #23374d;
+  height: 50px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.portfolioText{
+  color: #eeeeee;
+  position: relative;
+  left: 25%;
+  top: 25%;
+}
+
+    /* ========================Media Queries============================= */
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
   /* page width */
   .container {
-    max-width: 70%;
+    max-width: 75%;
   }
 
       /* Header */
@@ -205,6 +248,8 @@ margin: auto;
   .mainNav li{
     margin-left: 60px;
   }
+
+    /* ========================Media Contact============================= */
 
   .contactTitle{
     font-size: 38px;
@@ -219,6 +264,49 @@ margin: auto;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+      /* ========================Media About============================= */
+
+  .portfolioLink{
+    font-size: 30px;
+    margin:10px auto;
+    height: 50px;
+    width: 200px;
+  }
+
+  .portfolioText{
+    top: 0%;
+  }
+
+  .aboutText{
+    font-size: 15px;
+  }
+
+  .aboutContainer{
+    display: block;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .imageWrap{
+    width: 50%;
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+
+  .aboutInfo{
+    height: 50%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+    display: block;
+  }
+
+  .dividerAbout{
+    margin-top: 170px;
+  }
+
 }
 
 @media all and (max-width: 767px) {
@@ -227,6 +315,15 @@ margin: auto;
   .container{
     max-width: 95%;
   }
+
+  .mainNav li a{
+    font-size: 15px;
+  }
+  .mainNav li{
+    margin-left: 30px;
+  }
+
+      /* ========================Media Index============================= */
 
   .indexTumbnail{ /*place holder for the images*/
     cursor: pointer;
@@ -237,12 +334,7 @@ margin: auto;
     margin-bottom: 1.2%;
   }
 
-  .mainNav li a{
-    font-size: 15px;
-  }
-  .mainNav li{
-    margin-left: 30px;
-  }
+      /* ========================Media Contact============================= */
 
   .contactContainer{
     display: block;
@@ -279,5 +371,47 @@ margin: auto;
 
   .contactTitle{
     font-size: 35px;
+  }
+
+    /* ========================Media About============================= */
+
+  .portfolioLink{
+    font-size: 30px;
+    margin:10px auto;
+    height: 50px;
+    width: 200px;
+  }
+
+  .portfolioText{
+    top: 0%;
+  }
+
+  .aboutText{
+    font-size: 15px;
+  }
+
+  .aboutContainer{
+    padding-left: 2%;
+    display: block;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .imageWrap{
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+
+  .aboutInfo{
+    height: 50%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+    display: block;
+  }
+
+  .dividerAbout{
+    margin-top: 170px;
   }
 }
