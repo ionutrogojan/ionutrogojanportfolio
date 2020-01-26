@@ -219,17 +219,23 @@ margin: auto;
 }
 
 .portfolioLink{
-  background-color: #23374d;
   height: 50px;
   width: 200px;
   margin-bottom: 10px;
 }
 
 .portfolioText{
+  cursor: pointer;
+  border: none;
+  background-color: #23374d;
   color: #eeeeee;
   position: relative;
-  left: 25%;
-  top: 25%;
+  width: 200px;
+  height: 50px;
+}
+
+.portfolioText:hover{
+  border: 2px solid #eeeeee;
 }
 
     /* ========================Media Queries============================= */
@@ -269,13 +275,13 @@ margin: auto;
 
   .portfolioLink{
     font-size: 30px;
-    margin:10px auto;
+    margin:15px auto;
     height: 50px;
     width: 200px;
   }
 
-  .portfolioText{
-    top: 0%;
+  .portfolioText:hover{
+    border: 2px solid #eeeeee;
   }
 
   .aboutText{
@@ -351,8 +357,8 @@ margin: auto;
   .contactInfo{
     width: 70%;
     top: 50%;
-    left: 55%;
-    transform: translate(-50%, -45%);;
+    left: 52%;
+    transform: translate(-50%, -48%);
   }
 
   .contactLinkWrap{
@@ -377,13 +383,13 @@ margin: auto;
 
   .portfolioLink{
     font-size: 30px;
-    margin:10px auto;
+    margin:15px auto;
     height: 50px;
     width: 200px;
   }
 
-  .portfolioText{
-    top: 0%;
+  .portfolioText:hover{
+    border: 2px solid #eeeeee;
   }
 
   .aboutText{
