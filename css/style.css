@@ -6,13 +6,13 @@
   font-weight: 400;
   font-size: 15px;
   margin: 0;
-  color: #23374d;
+  color: #323643;
   box-sizing: border-box;
   list-style: none;
 }
 
 body{ /*html page*/
-  background-color: #eeeeee;
+  background-color: #f7f7f7;
   display: block;
 }
 
@@ -43,7 +43,7 @@ body{ /*html page*/
 }
 
 .mainNav li a:hover{ /*hover colour change*/
-  color: #1089ff;
+  color: #3282b8;
 }
 
 .page-dividerT{ /*top page divider*/
@@ -117,7 +117,7 @@ margin: auto;
 }
 
 .footer a:hover{ /*text hover colour change*/
-  color: #1089ff;
+  color: #3282b8;
 }
 
     /* ========================404============================= */
@@ -227,7 +227,7 @@ margin: auto;
 .portfolioText{
   cursor: pointer;
   border: none;
-  background-color: #23374d;
+  background-color: #3282b8;
   color: #eeeeee;
   position: relative;
   width: 200px;
@@ -235,7 +235,7 @@ margin: auto;
 }
 
 .portfolioText:hover{
-  border: 2px solid #eeeeee;
+  border: 2px solid #f7f7f7;
 }
 
     /* ========================Media Queries============================= */
@@ -281,7 +281,7 @@ margin: auto;
   }
 
   .portfolioText:hover{
-    border: 2px solid #eeeeee;
+    border: 2px solid #f7f7f7;
   }
 
   .aboutText{
@@ -389,7 +389,7 @@ margin: auto;
   }
 
   .portfolioText:hover{
-    border: 2px solid #eeeeee;
+    border: 2px solid #f7f7f7;
   }
 
   .aboutText{
