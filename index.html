@@ -1,174 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<!-- Head -->
 
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8"> <!-- media query wont work without -->
-  <title>IRP</title>
-  <link rel="shortcut icon" type="image/png" href="images/IRP.png"> <!-- favicon/ the icon in the tab -->
-  <link rel="stylesheet" href="css/style.css"> <!-- css link -->
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100861698-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-100861698-1');
-</script>
-  
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" charset="utf-8"> <!-- media query wont work without -->
+  <meta charset="utf-8">
+  <title>IRP V4</title>
+  <link rel="shortcut icon" type="image/png" href="image/logo.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- Head end -->
 
-<!-- Body -->
-
-<body>
-  <div class="container">
-    <!-- actual page -->
-
-    <!-- Header -->
-    <header class="header">
-      <a href="index.html"><img class="logo" href="index.html" src="images/IRP.png" alt="Ionut Rogojan"></a> <!-- logo -->
-      <nav>
-        <!-- navigation bar -->
-        <ul class="mainNav">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="pages/about.html">About</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
+<body class="index">
+  <header>
+    <div class="icon" onclick="window.location.href='index.html'"></div>
+    <div class="menu" onclick="openClose()" title="> open menu">
+      <p>[+]</p>
+    </div>
+    <div class="menuBG hidden" id="menuNav">
+      <div class="menuWP">
+        <div class="menuC" onclick="openClose()">
+          <div class="x1"></div>
+          <div class="x2"></div>
+        </div>
+        <ul>
+          <li><a href="#index">> INTRO</a></li>
+          <li><a href="#projects">> PROJECTS</a></li>
+          <li><a href="#about">> ABOUT</a></li>
         </ul>
-      </nav>
-    </header>
-    <!-- Header end-->
-
-    <div class="page-dividerT"></div> <!-- page divider -->
-
-    <!-- page content -->
-    <main>
-
-      <!-- gallery layout -->
-      <div class="category">
-        <a href="pages/comingsoon.html" target="_blank" class="indexTumbnail">
-          <!-- tumbnail link -->
-          <video class="preview" muted autoplay loop poster="images/category/logo.png">
-            <source src="images/video/logo.mp4" type="video/mp4">
-              Preview not supported. Please change browser.
-          </video>
-           <!-- tumbnail placeholder -->
-          <div class="overlay">
-            <!--  overlay colour+ animation -->
-            <div class="text">
-              <!-- info text -->
-              LOGOS
-            </div>
-          </div>
-        </a>
-        <a href="pages/comingsoon.html" target="_blank" class="indexTumbnail">
-          <video class="preview" muted autoplay loop poster="images/category/poster.png">
-            <source src="images/video/poster.mp4" type="video/mp4">
-              Preview not supported. Please change browser.
-          </video>
-          <div class="overlay">
-            <!--  overlay colour+ animation -->
-            <div class="text">
-              <!-- info text -->
-              POSTERS
-            </div>
-          </div>
-        </a>
-        <a href="pages/comingsoon.html" target="_blank" class="indexTumbnail">
-          <img class="preview" src="images/category/illustration.jpg"></img>
-          <div class="overlay">
-            <!--  overlay colour+ animation -->
-            <div class="text">
-              <!-- info text -->
-              ILLUSTRATIONS
-            </div>
-          </div>
-        </a>
-        <a href="pages/comingsoon.html" target="_blank" class="indexTumbnail">
-          <video class="preview" muted autoplay loop poster="images/category/font.png">
-            <source src="images/video/font.mp4" type="video/mp4">
-              Preview not supported. Please change browser.
-          </video>
-          <div class="overlay">
-            <!--  overlay colour+ animation -->
-            <div class="text">
-              <!-- info text -->
-              TYPES
-            </div>
-          </div>
-        </a>
-        <a href="pages/comingsoon.html" target="_blank" class="indexTumbnail">
-          <video class="preview" muted autoplay loop poster="images/category/pixelart.png">
-            <source src="images/video/pixelart.mp4" type="video/mp4">
-              Preview not supported. Please change browser.
-          </video>
-          <div class="overlay">
-            <!--  overlay colour+ animation -->
-            <div class="text">
-              <!-- info text -->
-              PIXEL ART
-            </div>
-          </div>
-        </a>
-        <a href="pages/comingsoon.html" target="_blank" class="indexTumbnail">
-          <img class="preview" src="images/category/photomanipulation.jpg"></img>
-          <div class="overlay">
-            <!--  overlay colour+ animation -->
-            <div class="text">
-              <!-- info text -->
-              PHOTO MANIPULATION
-            </div>
-          </div>
-        </a>
-        <a href="pages/comingsoon.html" target="_blank" class="indexTumbnail">
-          <img class="preview" src="images/category/21.png"></img>
-          <div class="overlay">
-            <!--  overlay colour+ animation -->
-            <div class="text">
-              <!-- info text -->
-              3D
-            </div>
-          </div>
-        </a>
-        <a href="pages/comingsoon.html" target="_blank" class="indexTumbnail">
-          <img class="preview" src="images/category/visc.png"></img>
-          <div class="overlay">
-            <!--  overlay colour+ animation -->
-            <div class="text">
-              <!-- info text -->
-              MOCKUPS
-            </div>
-          </div>
-        </a>
-        <a href="pages/comingsoon.html" target="_blank" class="indexTumbnail">
-          <img class="preview" src="images/category/helmet.png"></img>
-          <div class="overlay">
-            <!--  overlay colour+ animation -->
-            <div class="text">
-              <!-- info text -->
-              MISC
-            </div>
-          </div>
-        </a>
       </div>
-      <!-- gallery layout end-->
+    </div>
+  </header>
 
-    </main>
-    <!-- page content end -->
-    <div class="page-dividerB"></div> <!-- page divider -->
+  <P class="welcome" title="Hello World!">
+    > WELCOME
+  </P>
+  <p class="smallW">> W<br>ELC<br>OM<br>E</p>
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer">
-        <!-- text placeholder -->
-        &copy;IRP 2019-2020 | created by <a href="mailto: i.rogojan15@gmail.com">Ionut Rogojan</a> <!-- email link -->
-      </div>
-    </footer>
-    <!-- Footer end -->
-
+  <div class="more" title="> open updates">
+    <p>.more</p>
   </div>
+
+  <script>
+    function openClose() {
+      document.getElementById('menuNav').classList.toggle('hidden');
+      document.getElementById('menuNav').classList.toggle('show');
+    }
+  </script>
 </body>
 
 </html>

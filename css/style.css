@@ -1,423 +1,241 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
-*{ /* everything before the page loads*/
-  text-decoration: none !important;
-  font-family: Montserrat, Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&display=swap');
+
+*{
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: gothBold, Montserrat, sans-serif;
+    font-size: 14px;
+    color: #f8f8f8;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'gothBold';
+  src: url(../fonts/Goth-Bold.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+body{
+  background-color: #1089ff;
   margin: 0;
-  color: #323643;
-  box-sizing: border-box;
-  list-style: none;
+  padding-top: 1.5%;
 }
 
-body{ /*html page*/
-  background-color: #f7f7f7;
-  display: block;
-}
-
-.container{ /*actual page*/
-  max-width: 60%;
-  height: 100%;
-  margin: 10px auto;
-  padding: 0;
-}
-
-.header{ /*navBar place holder*/
+header{
+  width: 95%;
+  height: 48px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 30px 0;
 }
 
-.logo{ /*the logo*/
+.icon{
   cursor: pointer;
-  width: 80px;
-  vertical-align: middle;
-}
-
-.mainNav li{ /*navigation list buttons*/
+  background-color: #f8f8f8;
+  width: 48px;
+  height: 48px;
   display: inline-block;
-  padding: 0p 20px;
-  margin-left: 80px;
 }
 
-.mainNav li a:hover{ /*hover colour change*/
-  color: #3282b8;
+.hidden{
+  display: none;
 }
 
-.page-dividerT{ /*top page divider*/
-  border-bottom: 1px solid #e5e5e5;
-}
-
-    /* ========================Index============================= */
-
-.category{ /*flex layout*/
-  padding-top: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.indexTumbnail{ /*place holder for the images*/
-  cursor: pointer;
-  position: relative;
-  background-color: #e5e5e5;
-  flex-basis: 31.8%;
-  height: 31.8%;
-  margin-bottom: 2.4%;
-}
-
-.preview{ /*the image*/
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+.show{
   display: block;
 }
 
-.overlay{ /*overlay colour background+ opacity change*/
+.menu{
+  cursor: pointer;
+  /*background-color: #f8f8f8; */
+  width: 68px;
+  height: 40px;
+  margin-top: 4px;
+  display: inline-block;
+  padding: 0;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.menu p{
+  color: #f8f8f8;
+  font-size: 48px;
+  margin: 0;
+  margin-top: -11px;
+  margin-left: -3.8px;
+}
+
+.menuBG{
+  background-color: #1089ff;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
-  weight: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: rgb(229, 229, 229, .70);
+  z-index: 1;
 }
 
-.indexTumbnail:hover .overlay{ /*opacity change animation*/
-  opacity: 1;
-}
-
-.text { /*info text*/
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.page-dividerB{ /*page divider bottom*/
-  padding-top: 50px;
-  border-bottom: 1px solid #e5e5e5;
-}
-footer{ /*footer*/
-  display: flex;
-  flex-direction: column;
-  height: 50px;
-
-}
-
-.footer{ /*placeholder for text*/
-margin: auto;
-}
-
-.footer a:hover{ /*text hover colour change*/
-  color: #3282b8;
-}
-
-    /* ========================404============================= */
-
-.comingsoon img{
-  max-width: 60%;
-  max-height: 60%;
+.menuWP{
+  background-color: #f8f8f8;
+  height: 90%;
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-    /* ========================Contact============================= */
-
-.contactContainer{
-  padding-top: 50px;
-  height: 72vh;
-  display: flex;
-  position: relative;
-  line-height: 1.5;
-}
-
-.contactInfoWrap{
-  width: 50%;
-  display: block;
-  position: relative;
-}
-
-.contactInfo{
-  position: absolute;
-  width: 85%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -55%);
-}
-
-.contactTitle{
-  font-weight: bold;
-  font-size: 43.8px;
-  margin-bottom: 5px;
-}
-
-.contactLinkWrap{
-  width: 50%;
-  position: relative;
-}
-
-.contactLink{
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.contactTumbnail{
+.menuC{
   cursor: pointer;
-  position: relative;
-  flex-basis: 48%;
-  height: 48%;
-  margin-bottom: 4%;
-  background-color: #e5e5e5;
+  background-color: #110f26;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
 }
 
-    /* ========================About============================= */
-
-.aboutContainer{
-  padding-top: 50px;
-  height: 72vh;
-  display: flex;
-  position: relative;
-  line-height: 1.5;
-  justify-content: space-between;
+.menuC:hover{
+  background-color: #dc1354;
 }
 
-.imageWrap{
-  width: 47.5%;
+.x1{
+  background-color: #f8f8f8;
+  height: 5px;
+  width: 20px;
+  position: absolute;
+  top: 12.6px;
+  left: 4.5px;
+  transform: rotate(45deg);
+}
+
+.x2{
+  background-color: #f8f8f8;
+  height: 5px;
+  width: 20px;
+  position: absolute;
+  top: 12.9px;
+  left: 5px;
+  transform: rotate(-45deg);
+}
+
+ul{
+  padding: 0;
   display: block;
-  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 645px;
 }
 
-.aboutImage{
-  cursor: pointer;
-  position: relative;
+li{
+  /*text-align: center; */
+  line-height: 120px;
+}
+
+a{
+  color: #110f26;
+  font-size: 100px;
+}
+
+a:hover{
+  color: #dc1354;
+}
+
+.welcome{
+  cursor: default;
+  margin: 0;
   width: 100%;
-  height: auto;
-  background-color: #e5e5e5;
+  font-size: 250px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.aboutInfo{
-  width: 47.5%;
-  display: block;
-  position: relative;
+.smallW{
+  cursor: default;
+  margin: 0;
+  width: 100%;
+  font-size: 165px;
+  line-height: 145px;
+  text-align: center;
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  top: 49%;
+  transform: translateY(-51%);
 }
 
-.portfolioLink{
-  height: 50px;
-  width: 200px;
-  margin-bottom: 10px;
-}
-
-.portfolioText{
+.more{
   cursor: pointer;
-  border: none;
-  background-color: #3282b8;
-  color: #eeeeee;
-  position: relative;
-  width: 200px;
-  height: 50px;
+  width: 120px;
+  height: 48px;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 90%;
+  left: 49%;
+  transform: translateX(-51%);
 }
 
-.portfolioText:hover{
-  border: 2px solid #f7f7f7;
+.more p{
+  font-size: 24px;
+  color: #110f26;
+  margin: 0;
+  padding-top: 11px;
+  padding-left: 20px;
 }
 
-    /* ========================Media Queries============================= */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  /* page width */
-  .container {
-    max-width: 75%;
-  }
-
-      /* Header */
-  .mainNav li a{
-    font-size: 15px;
-  }
-  .mainNav li{
-    margin-left: 60px;
-  }
-
-    /* ========================Media Contact============================= */
-
-  .contactTitle{
-    font-size: 38px;
-  }
-
-  .contactText{
-    font-size: 14px;
-  }
-
-  .contactInfo{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-      /* ========================Media About============================= */
-
-  .portfolioLink{
-    font-size: 30px;
-    margin:15px auto;
-    height: 50px;
-    width: 200px;
-  }
-
-  .portfolioText:hover{
-    border: 2px solid #f7f7f7;
-  }
-
-  .aboutText{
-    font-size: 15px;
-  }
-
-  .aboutContainer{
-    display: block;
-    height: 100vh;
-    justify-content: center;
-  }
-
-  .imageWrap{
-    width: 50%;
-    width: 100%;
-    position: relative;
-    display: block;
-  }
-
-  .aboutInfo{
-    height: 50%;
-    width: 100%;
-    position: relative;
-    padding-bottom: 50px;
-    display: block;
-  }
-
-  .dividerAbout{
-    margin-top: 170px;
-  }
-
+.more p:hover{
+  color: #dc1354;
 }
+
+
+ /* ========== Media Query ========== */
 
 @media all and (max-width: 767px) {
 
-  /* page width */
-  .container{
-    max-width: 95%;
+  body{
+    padding-top: 2.5%;
   }
 
-  .mainNav li a{
-    font-size: 15px;
-  }
-  .mainNav li{
-    margin-left: 30px;
-  }
-
-      /* ========================Media Index============================= */
-
-  .indexTumbnail{ /*place holder for the images*/
-    cursor: pointer;
-    position: relative;
-    background-color: #e5e5e5;
-    flex-basis: 49.4%;
-    height: 49.4%;
-    margin-bottom: 1.2%;
-  }
-
-      /* ========================Media Contact============================= */
-
-  .contactContainer{
-    display: block;
-  }
-
-  .contactInfoWrap{
-    margin-top: 20px;
-    height: 30%;
+  .menuWP{
+    height: 90%;
     width: 100%;
-    display: block;
-    position: relative;
   }
 
-  .contactInfo{
-    width: 70%;
-    top: 50%;
-    left: 52%;
-    transform: translate(-50%, -48%);
+  ul{
+    width: 387px;
   }
 
-  .contactLinkWrap{
-    margin-top: 10px;
-    height: 50%;
-    width: 100%;
-    position: relative;
+  li{
+    line-height: 90px;
   }
 
-  .contactTumbnail{
-    cursor: pointer;
-    flex-basis: 31.8%;
-    height: 31.8%;
-    margin-bottom: 2.4%;
+  a{
+    font-size: 60px;
   }
 
-  .contactTitle{
-    font-size: 35px;
+  .menuC{
+    background-color: #dc1354;
   }
 
-    /* ========================Media About============================= */
-
-  .portfolioLink{
-    font-size: 30px;
-    margin:15px auto;
-    height: 50px;
-    width: 200px;
+  .more p{
+    color: #dc1354;
   }
 
-  .portfolioText:hover{
-    border: 2px solid #f7f7f7;
+  .welcome{
+    display: none;
   }
 
-  .aboutText{
-    font-size: 15px;
-  }
-
-  .aboutContainer{
-    padding-left: 2%;
-    display: block;
-    height: 100vh;
-    justify-content: center;
-  }
-
-  .imageWrap{
-    width: 100%;
-    position: relative;
+  .smallW{
     display: block;
   }
 
-  .aboutInfo{
-    height: 50%;
-    width: 100%;
-    position: relative;
-    padding-bottom: 50px;
-    display: block;
-  }
-
-  .dividerAbout{
-    margin-top: 170px;
-  }
 }
