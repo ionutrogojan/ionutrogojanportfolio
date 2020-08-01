@@ -1,3 +1,6 @@
+window.onblur = function() { document.title = 'come back!'; }
+    window.onfocus = function() { document.title = 'IRP V4'; }
+
 function openClose() {
   document.getElementById('menuNav').classList.toggle('hidden');
   document.getElementById('menuNav').classList.toggle('show');
