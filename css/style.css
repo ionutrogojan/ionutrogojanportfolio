@@ -30,6 +30,7 @@ header{
   margin: auto;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .icon{
@@ -38,6 +39,12 @@ header{
   width: 48px;
   height: 48px;
   display: inline-block;
+}
+
+.icon img{
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .hidden{
@@ -60,12 +67,10 @@ header{
   overflow: hidden;
 }
 
-.menu p{
-  color: #f8f8f8;
-  font-size: 48px;
-  margin: 0;
-  margin-top: -11px;
-  margin-left: -3.8px;
+.menu img{
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .menuBG{
@@ -75,7 +80,7 @@ header{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .menuWP{
@@ -147,16 +152,22 @@ a:hover{
   color: #dc1354;
 }
 
-.welcome{
+.welcomeWP{
   cursor: default;
-  margin: 0;
   width: 100%;
-  font-size: 250px;
   position: absolute;
   display: flex;
   justify-content: center;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.welcome{
+  margin: 0;
+  width: 100%;
+  font-size: 250px;
+  display: flex;
+  justify-content: center;
 }
 
 .smallW{

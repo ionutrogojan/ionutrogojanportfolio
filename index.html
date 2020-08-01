@@ -2,18 +2,21 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" charset="utf-8"> <!-- media query wont work without -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" charset="utf-8"> <!-- media query wont work without -->
   <meta charset="utf-8">
   <title>IRP V4</title>
-  <link rel="shortcut icon" type="image/png" href="image/logo.png">
+  <link rel="shortcut icon" type="image/png" href="image/favicon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="index">
   <header>
-    <div class="icon" onclick="window.location.href='index.html'"></div>
+    <div class="icon" onclick="window.location.href='index.html'">
+      <img src="image/logo.png" alt="logo" title="hello :)">
+    </div>
     <div class="menu" onclick="openClose()" title="> open menu">
-      <p>[+]</p>
+    <!--  <p>[+]</p> -->
+      <img src="image/menuIMG.png" alt="menu">
     </div>
     <div class="menuBG hidden" id="menuNav">
       <div class="menuWP">
@@ -30,10 +33,10 @@
     </div>
   </header>
 
-  <P class="welcome" title="Hello World!">
-    > WELCOME
-  </P>
-  <p class="smallW">> W<br>ELC<br>OM<br>E</p>
+  <div class="welcomeWP">
+    <P class="welcome" id="type" title="Hello World!"></P>
+  </div>
+    <p class="smallW">> W<br>ELC<br>OM<br>E</p>
 
   <div class="more" title="> open updates">
     <p>.more</p>
@@ -44,6 +47,22 @@
       document.getElementById('menuNav').classList.toggle('hidden');
       document.getElementById('menuNav').classList.toggle('show');
     }
+
+    let i = 0;
+    let txt = "> WELCOME"
+    let speed = 200;
+    function typeW() {
+        document.getElementById('type').innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeW, speed);
+        //console.log(i);
+        if (i === 60) {
+          i = 0;
+          document.getElementById('type').innerHTML = '';
+        }
+    }
+    typeW();
+
   </script>
 </body>
 
