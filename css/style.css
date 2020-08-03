@@ -32,6 +32,10 @@ body.projects{
   overflow: hidden;
 }
 
+body.about{
+  background-color: #f8f8f8;
+}
+
 section {
   width: 100%;
   height: 100vh;
@@ -71,27 +75,28 @@ header {
 
 .menu {
   cursor: pointer;
-  /*background-color: #f8f8f8; */
-  width: 68px;
-  height: 40px;
-  margin-top: 4px;
+  background-color: #ffffff00;
+  border: 0;
   display: inline-block;
-  padding: 0;
   vertical-align: top;
-  overflow: hidden;
+  font-size: 40px;
 }
 
-.menu img {
-  width: 100%;
-  height: 100%;
-  display: block;
+.menu:hover{
+  background-color: #f8f8f8;
+  color: #dc1354;
+}
+
+.menuAP{
+  color: #1089ff;
+  background-color: #ffffff00;
 }
 
 .menuBG {
   background-color: #1089ff;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
@@ -226,7 +231,7 @@ a:hover {
 
 .view{
   background-color: #1089ff;
-  width: 201px;
+  width: 221px;
   height: 49px;
   border: 3px solid #f8f8f8;
   font-size: 24px;
@@ -268,6 +273,126 @@ a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* ========== About ========== */
+
+.aboutWP{
+  /*background-color: red; */
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutIMG{
+  width: 600px;
+  height: 800px;
+  background-color: #1089ff;
+  display: inline-block;
+}
+
+.aboutIMG p{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  margin-left: 75px;
+  transform: translateY(-50%);
+  font-size: 50px;
+}
+
+.aboutINFO{
+  width: 720px;
+  height: 650px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 150px;
+}
+
+.Title{
+  height: 48px;
+  border: solid 3px #1089ff;
+}
+
+.Title p{
+  color: #110f26;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.abouT{
+  width: 110px;
+}
+
+.aboutText p{
+  font-size: 24px;
+  color: #110f26;
+}
+
+.abT{
+  margin: 0;
+  margin-top: 24px;
+}
+
+.contact{
+  width: 125px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.contactText a{
+  font-size: 24px;
+  text-decoration: underline;
+  color: #dc1354;
+}
+
+.contactText a:hover{
+  color: #1089ff;
+}
+
+.stalk{
+  width: 140px;
+  margin-top: 24px;
+}
+
+.stalkText a{
+  font-size: 24px;
+}
+
+.stalkText a:hover{
+  color: #dc1354;
+  text-decoration: underline;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.lt{
+  color: #5c5b72;
+  font-size: 24px;
+  text-decoration: line-through;
+}
+
+.cl{
+  color: #dc1354;
+  font-size: 24px;
+}
+
+.co{
+  cursor: pointer;
+  color: #110f26;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.co:hover{
+  color: #dc1354;
 }
 
 /* ========== Media Query ========== */
