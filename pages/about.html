@@ -4,76 +4,87 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" charset="utf-8"> <!-- media query wont work without -->
   <meta charset="utf-8">
-  <title>IRP V4</title>
+  <title>IRP V4.5</title>
   <link rel="shortcut icon" type="image/png" href="../image/favicon.png">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="about">
-
-    <header>
-      <div class="icon" onclick="window.location.href='../index.html'">
-        <!-- icon svg -->
-        <svg viewBox="0 0 48 48">
-          <path d="M40.45,0H7.55A3.76,3.76,0,0,0,4.9,1.1L1.1,4.9A3.76,3.76,0,0,0,0,7.55V15A3.76,3.76,0,0,0,1.1,17.6l9.57,9.57a1.87,1.87,0,0,1,0,2.66L8.14,32.36a.37.37,0,0,0,.27.64H19.13A1.87,1.87,0,0,0,21,31.13V20.41a.37.37,0,0,0-.64-.27l-2.53,2.53a1.87,1.87,0,0,1-2.66,0L7.1,14.6A3.76,3.76,0,0,1,6,12v-1.4A3.76,3.76,0,0,1,7.1,7.9l.8-.8A3.76,3.76,0,0,1,10.55,6h26.9A3.76,3.76,0,0,1,40.1,7.1l.8.8A3.76,3.76,0,0,1,42,10.55v8a.37.37,0,0,0,.64.27l4.3-4.44A3.73,3.73,0,0,0,48,11.79V7.55A3.76,3.76,0,0,0,46.9,4.9L43.1,1.1A3.76,3.76,0,0,0,40.45,0Z"
-            style="fill:#1089ff" />
-          <path d="M39.59,15H28.88A1.88,1.88,0,0,0,27,16.88V27.59a.37.37,0,0,0,.64.27l2.53-2.53a1.87,1.87,0,0,1,2.66,0L40.9,33.4A3.76,3.76,0,0,1,42,36.05v1.4a3.76,3.76,0,0,1-1.1,2.65l-.8.8A3.76,3.76,0,0,1,37.45,42H10.55A3.76,3.76,0,0,1,7.9,40.9l-.8-.8A3.76,3.76,0,0,1,6,37.45v-8a.37.37,0,0,0-.64-.27L1.06,33.6A3.73,3.73,0,0,0,0,36.21v4.24A3.76,3.76,0,0,0,1.1,43.1l3.8,3.8A3.76,3.76,0,0,0,7.55,48h32.9a3.76,3.76,0,0,0,2.65-1.1l3.8-3.8A3.76,3.76,0,0,0,48,40.45v-7.4a3.76,3.76,0,0,0-1.1-2.65l-9.57-9.57a1.87,1.87,0,0,1,0-2.66l2.53-2.53A.37.37,0,0,0,39.59,15Z"
-            style="fill:#1089ff" />
-        </svg>
-      </div>
-      <button class="menu menuAP" onclick="openClose()" title="> open menu">.menu<!-- menu icon --></button>
-      <div class="menuBG hidden" id="menuNav">
-        <div class="menuWP">
-          <div class="menuC" onclick="openClose()" title="> close">
-            <svg class="x" viewBox="0 0 20 20">
-              <polygon points="12.5 20 12.5 12.5 20 12.5 20 7.5 12.5 7.5 12.5 0 7.5 0 7.5 7.5 0 7.5 0 12.5 7.5 12.5 7.5 20 12.5 20" style="fill:#f8f8f8" /></svg>
-          </div>
-          <ul>
-            <li><a href="../index.html">> INTRO</a></li>
-            <li><a href="../pages/projects.html">> PROJECTS</a></li>
-            <li><a href="../pages/about.html">> ABOUT</a></li>
-          </ul>
+<body class="rest">
+  <!-- header -->
+  <header>
+    <!-- svg icon -->
+    <div class="ico" onclick="bti()">
+      <svg viewBox="0 0 48 54">
+        <path d="M46.34,29.33l-12.22-7a.55.55,0,0,1-.2-.75l1.24-2.15a.28.28,0,0,0-.24-.41H24.86a.55.55,0,0,0-.49.78l4.55,9.65a.27.27,0,0,0,.48,0l1.26-2.2a.55.55,0,0,1,.75-.2l9.48,5.41a3.3,3.3,0,0,1,1.66,2.86v.35a3.32,3.32,0,0,1-1.66,2.87l-15.28,8.7a3.25,3.25,0,0,1-3.22,0L7.11,38.56A3.29,3.29,0,0,1,5.45,35.7V32.49a.27.27,0,0,0-.4-.24l-3.4,1.94A3.29,3.29,0,0,0,0,37.05v1.81a3.29,3.29,0,0,0,1.65,2.86L22.38,53.57a3.28,3.28,0,0,0,3.24,0L46.35,41.72A3.29,3.29,0,0,0,48,38.86V32.19A3.28,3.28,0,0,0,46.34,29.33Z"
+          style="fill:#1089ff" />
+        <path d="M46.35,12.28,25.62.43a3.28,3.28,0,0,0-3.24,0L1.66,12.28A3.28,3.28,0,0,0,0,15.14v6.67a3.29,3.29,0,0,0,1.65,2.86l12.23,7a.55.55,0,0,1,.2.75l-1.24,2.15a.28.28,0,0,0,.24.41H23.14a.55.55,0,0,0,.49-.78l-4.55-9.65a.27.27,0,0,0-.48,0l-1.26,2.2a.54.54,0,0,1-.74.2L7.11,21.51a3.3,3.3,0,0,1-1.66-2.86V18.3a3.32,3.32,0,0,1,1.66-2.87l15.28-8.7a3.25,3.25,0,0,1,3.22,0l15.28,8.71a3.29,3.29,0,0,1,1.66,2.86v3a.27.27,0,0,0,.4.24l3.39-1.94A3.3,3.3,0,0,0,48,16.76V15.14A3.29,3.29,0,0,0,46.35,12.28Z"
+          style="fill:#1089ff" />
+      </svg>
+    </div>
+    <!-- menu button -->
+    <button class="m mB" onclick="oC()" type="button" name="menu">
+      <span class="md">.menu</span>
+      <span class="mm">.m</span>
+    </button>
+    <!-- menu open -->
+    <div class="mBG h" id="mNV">
+      <div class="mWP">
+        <div class="mCB" onclick="oC()">
+          <svg class="x" viewBox="0 0 20 20">
+            <polygon points="12.5 20 12.5 12.5 20 12.5 20 7.5 12.5 7.5 12.5 0 7.5 0 7.5 7.5 0 7.5 0 12.5 7.5 12.5 7.5 20 12.5 20" style="fill:#f8f8f8" /></svg>
         </div>
-      </div>
-    </header>
-
-    <div class="aboutWP">
-      <div class="aboutIMG">
-        <p>> image loading...</p>
-      </div>
-      <div class="aboutINFO">
-
-        <div class="aboutText">
-          <div class="abouT Title">
-            <p>.about</p>
-          </div>
-          <p class="abT">> I will work in exchange of money I use to buy PIZZA and fuel for my motorcycle. Based in <span class="lt">Romania</span>, England. I am a generalist,
-          I work as a <span class="cl">Web Developer</span>, <span class="cl">Illustrator</span> and <span class="cl">3D Artist</span>. <br>
-          > List of clients include <span class="co" onclick="window.open('https://ionutrogojan.github.io/gabserv.github.io/index.html','_blank')">Gabserv LTD</span>, <span class="co" onclick="window.open('https://www.youtube.com/user/grasu629','_blank')">Agramatii</span>, <span class="co" onclick="window.open('https://www.facebook.com/LumanariSculptateLondon','_blank')">Lumanari Sculptate</span>, <span class="co" onclick="window.open('https://www.facebook.com/atelierulde.creatie.754','_blank')">DCDC</span> and individual based clients.</p>
-        </div>
-
-        <div class="contactText">
-          <div class="contact Title">
-            <p>.contact</p>
-          </div>
-          <a class="abT" href="mailto:'i.rogojan15@gmail.com'">> i.rogojan15@gmail.com</a>
-        </div>
-
-        <div class="stalkText">
-          <div class="stalk Title">
-            <p>.stalk me</p>
-          </div>
-          <div class="links">
-            <a href="https://discord.gg/tEaZ2c7" target="_blank">> discord</a>
-            <a href="https://twitter.com/ionutRogojan_" target="_blank">> twitter</a>
-            <a href="https://github.com/ionutrogojan" target="_blank">> github</a>
-            <a href="https://www.instagram.com/ionut.donut/" target="_blank">> instagram</a>
-          </div>
-        </div>
-
+        <ul>
+          <li><a href="../index.html">> INTRO</a></li>
+          <li><a href="../pages/projects.html">> PROJECTS</a></li>
+          <li><a href="../pages/about.html">> ABOUT</a></li>
+        </ul>
       </div>
     </div>
-
+  </header>
+  <!-- main -->
+  <main>
+    <div class="aWP">
+      <div class="aIW">
+        <img class="aI" src="../image/me2.jpg" alt="me">
+      </div>
+      <div class="aIW">
+        <p class="aT">
+          > Hello World! <br>
+          > I will work in exchange of money I use to buy PIZZA and fuel for my motorcycle. Based in <span class="lT">Romania</span>, England. I am a generalist,
+          I work as a <span class="cl">Web Developer</span>, <span class="cl">Illustrator</span> and <span class="cl">3D Artist</span>. <br>
+          > List of clients include <span class="co" onclick="window.open('https://ionutrogojan.github.io/gabserv.github.io/index.html','_blank')">Gabserv LTD</span>, <span class="co" onclick="window.open('https://www.youtube.com/user/grasu629','_blank')">Agramatii</span>,
+          <span class="co" onclick="window.open('https://www.facebook.com/LumanariSculptateLondon','_blank')">Lumanari Sculptate</span>, <span class="co" onclick="window.open('https://www.facebook.com/atelierulde.creatie.754','_blank')">DCDC</span>
+          and individual based clients.
+        </p>
+        <button class="aB" onclick="location.href='mailto:i.rogojan15@gmail.com'" type="button" name="email">i.rogojan15@gmail.com</button>
+        <div class="sB">
+          <a class="sGL" href="https://github.com/ionutrogojan" target="_blank">
+            <svg viewBox="0 0 40 39">
+              <path d="M20,0a20,20,0,0,0-6.32,39c1,.18,1.36-.44,1.36-1s0-1.73,0-3.4c-5.57,1.21-6.74-2.68-6.74-2.68A5.27,5.27,0,0,0,6.06,29c-1.82-1.24.14-1.22.14-1.22a4.21,4.21,0,0,1,3.06,2.06C11,32.9,13.94,32,15.08,31.5a4.27,4.27,0,0,1,1.27-2.67c-4.44-.5-9.11-2.22-9.11-9.88A7.75,7.75,0,0,1,9.3,13.58a7.19,7.19,0,0,1,.19-5.29s1.68-.54,5.5,2.05a19.07,19.07,0,0,1,10,0c3.82-2.59,5.49-2.05,5.49-2.05a7.16,7.16,0,0,1,.2,5.29A7.75,7.75,0,0,1,32.76,19c0,7.68-4.68,9.37-9.13,9.86A4.82,4.82,0,0,1,25,32.52c0,2.67,0,4.83,0,5.48s.36,1.16,1.37,1A20,20,0,0,0,20,0Z"
+                transform="translate(0 0)" />
+            </svg>
+          </a>
+          <a class="sLL" href="#" target="_blank">
+            <svg viewBox="0 0 40 40">
+              <path d="M37,0H3A3,3,0,0,0,0,3V37a3,3,0,0,0,3,3H37a3,3,0,0,0,3-3V3A3,3,0,0,0,37,0ZM11.8,33.57a.31.31,0,0,1-.31.31H6.19a.31.31,0,0,1-.31-.31V15.2a.31.31,0,0,1,.31-.31h5.3a.31.31,0,0,1,.31.31Zm-3-21.29a3.43,3.43,0,1,1,3.43-3.42A3.42,3.42,0,0,1,8.84,12.28ZM33.94,23V33.57a.31.31,0,0,1-.31.31H28.35a.31.31,0,0,1-.31-.31V24.1c0-.75.29-4.52-3.32-4.51s-3.3,4.79-3.3,4.79l0,9.19a.31.31,0,0,1-.31.31H15.82a.31.31,0,0,1-.31-.31V15.2a.31.31,0,0,1,.31-.31h5a.29.29,0,0,1,.31.3v2.27c0,.05.08.07.1,0,.37-.69,1.75-3.2,6.39-3.07C34.39,14.6,34,22.67,33.94,23Z" />
+            </svg>
+          </a>
+          <a class="sDL" href="https://discord.gg/tEaZ2c7" target="_blank">
+            <svg viewBox="0 0 40 45">
+              <path d="M24.19,18.88a2.5,2.5,0,1,0,2.33,2.5A2.41,2.41,0,0,0,24.19,18.88Zm-8.34,0a2.5,2.5,0,1,0,2.33,2.5A2.38,2.38,0,0,0,15.85,18.88Z" />
+              <path d="M35.29,0H4.68A4.67,4.67,0,0,0,0,4.65V35.06a4.67,4.67,0,0,0,4.68,4.65H30.59l-1.21-4.15,2.92,2.68,2.77,2.52L40,45V4.65A4.71,4.71,0,0,0,35.29,0ZM26.48,29.39s-.83-1-1.51-1.82a7.23,7.23,0,0,0,4.13-2.68,12.29,12.29,0,0,1-2.62,1.34,16.73,16.73,0,0,1-3.32,1,16.21,16.21,0,0,1-5.91,0,17.33,17.33,0,0,1-3.36-1,12.23,12.23,0,0,1-1.67-.77c-.07-.05-.14-.07-.2-.11s-.07,0-.1,0c-.41-.23-.64-.39-.64-.39a7.13,7.13,0,0,0,4,2.66c-.68.86-1.53,1.86-1.53,1.86-5.05-.16-7-3.43-7-3.43a29.76,29.76,0,0,1,3.29-13.11,11.36,11.36,0,0,1,6.4-2.36l.23.27a15.13,15.13,0,0,0-6,3s.51-.27,1.35-.64a18.26,18.26,0,0,1,5.19-1.43,2.45,2.45,0,0,1,.39,0,19.57,19.57,0,0,1,4.61,0,19.16,19.16,0,0,1,6.88,2.16,15.13,15.13,0,0,0-5.69-2.86l.32-.36a11.28,11.28,0,0,1,6.39,2.36A29.76,29.76,0,0,1,33.44,26S31.52,29.23,26.48,29.39Z" />
+            </svg>
+          </a>
+          <a class="sTL" href="https://twitter.com/ionutRogojan_" target="_blank">
+            <svg viewBox="0 0 40 40">
+              <path d="M0,3V37a3,3,0,0,0,3,3H37a3,3,0,0,0,3-3V3a3,3,0,0,0-3-3H3A3,3,0,0,0,0,3ZM29.94,14.9c0,.22,0,.44,0,.67A14.6,14.6,0,0,1,7.5,27.86c.4,0,.81.07,1.22.07a10.24,10.24,0,0,0,6.37-2.2,5.14,5.14,0,0,1-4.79-3.56,5.15,5.15,0,0,0,1,.09,5.05,5.05,0,0,0,1.35-.18,5.13,5.13,0,0,1-4.12-5V17a5.26,5.26,0,0,0,2.33.64,5.15,5.15,0,0,1-1.59-6.85,14.56,14.56,0,0,0,10.57,5.36A5.06,5.06,0,0,1,19.68,15a5.13,5.13,0,0,1,8.87-3.51,10.44,10.44,0,0,0,3.26-1.24,5.13,5.13,0,0,1-2.26,2.83,10.38,10.38,0,0,0,2.95-.8A10.57,10.57,0,0,1,29.94,14.9Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- script -->
   <script src="../script/main.js"></script>
 </body>
 

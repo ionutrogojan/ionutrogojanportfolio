@@ -4,28 +4,34 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" charset="utf-8"> <!-- media query wont work without -->
   <meta charset="utf-8">
-  <title>IRP V4</title>
+  <title>IRP V4.5</title>
   <link rel="shortcut icon" type="image/png" href="image/favicon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="index">
-  <section id="intro">
-    <!-- section 1 -->
-
+  <!-- header -->
     <header>
-      <div class="icon" onclick="window.location.href='index.html'">
-        <!-- icon svg -->
-        <svg viewBox="0 0 48 48">
-          <path d="M40.45,0H7.55A3.76,3.76,0,0,0,4.9,1.1L1.1,4.9A3.76,3.76,0,0,0,0,7.55V15A3.76,3.76,0,0,0,1.1,17.6l9.57,9.57a1.87,1.87,0,0,1,0,2.66L8.14,32.36a.37.37,0,0,0,.27.64H19.13A1.87,1.87,0,0,0,21,31.13V20.41a.37.37,0,0,0-.64-.27l-2.53,2.53a1.87,1.87,0,0,1-2.66,0L7.1,14.6A3.76,3.76,0,0,1,6,12v-1.4A3.76,3.76,0,0,1,7.1,7.9l.8-.8A3.76,3.76,0,0,1,10.55,6h26.9A3.76,3.76,0,0,1,40.1,7.1l.8.8A3.76,3.76,0,0,1,42,10.55v8a.37.37,0,0,0,.64.27l4.3-4.44A3.73,3.73,0,0,0,48,11.79V7.55A3.76,3.76,0,0,0,46.9,4.9L43.1,1.1A3.76,3.76,0,0,0,40.45,0Z" style="fill:#f8f8f8"/>
-          <path d="M39.59,15H28.88A1.88,1.88,0,0,0,27,16.88V27.59a.37.37,0,0,0,.64.27l2.53-2.53a1.87,1.87,0,0,1,2.66,0L40.9,33.4A3.76,3.76,0,0,1,42,36.05v1.4a3.76,3.76,0,0,1-1.1,2.65l-.8.8A3.76,3.76,0,0,1,37.45,42H10.55A3.76,3.76,0,0,1,7.9,40.9l-.8-.8A3.76,3.76,0,0,1,6,37.45v-8a.37.37,0,0,0-.64-.27L1.06,33.6A3.73,3.73,0,0,0,0,36.21v4.24A3.76,3.76,0,0,0,1.1,43.1l3.8,3.8A3.76,3.76,0,0,0,7.55,48h32.9a3.76,3.76,0,0,0,2.65-1.1l3.8-3.8A3.76,3.76,0,0,0,48,40.45v-7.4a3.76,3.76,0,0,0-1.1-2.65l-9.57-9.57a1.87,1.87,0,0,1,0-2.66l2.53-2.53A.37.37,0,0,0,39.59,15Z" style="fill:#f8f8f8"/>
+      <!-- svg icon -->
+      <div class="ico" onclick="bti()">
+        <svg viewBox="0 0 48 54">
+          <path d="M46.34,29.33l-12.22-7a.55.55,0,0,1-.2-.75l1.24-2.15a.28.28,0,0,0-.24-.41H24.86a.55.55,0,0,0-.49.78l4.55,9.65a.27.27,0,0,0,.48,0l1.26-2.2a.55.55,0,0,1,.75-.2l9.48,5.41a3.3,3.3,0,0,1,1.66,2.86v.35a3.32,3.32,0,0,1-1.66,2.87l-15.28,8.7a3.25,3.25,0,0,1-3.22,0L7.11,38.56A3.29,3.29,0,0,1,5.45,35.7V32.49a.27.27,0,0,0-.4-.24l-3.4,1.94A3.29,3.29,0,0,0,0,37.05v1.81a3.29,3.29,0,0,0,1.65,2.86L22.38,53.57a3.28,3.28,0,0,0,3.24,0L46.35,41.72A3.29,3.29,0,0,0,48,38.86V32.19A3.28,3.28,0,0,0,46.34,29.33Z"
+            style="fill:#f8f8f8" />
+          <path d="M46.35,12.28,25.62.43a3.28,3.28,0,0,0-3.24,0L1.66,12.28A3.28,3.28,0,0,0,0,15.14v6.67a3.29,3.29,0,0,0,1.65,2.86l12.23,7a.55.55,0,0,1,.2.75l-1.24,2.15a.28.28,0,0,0,.24.41H23.14a.55.55,0,0,0,.49-.78l-4.55-9.65a.27.27,0,0,0-.48,0l-1.26,2.2a.54.54,0,0,1-.74.2L7.11,21.51a3.3,3.3,0,0,1-1.66-2.86V18.3a3.32,3.32,0,0,1,1.66-2.87l15.28-8.7a3.25,3.25,0,0,1,3.22,0l15.28,8.71a3.29,3.29,0,0,1,1.66,2.86v3a.27.27,0,0,0,.4.24l3.39-1.94A3.3,3.3,0,0,0,48,16.76V15.14A3.29,3.29,0,0,0,46.35,12.28Z"
+            style="fill:#f8f8f8" />
         </svg>
       </div>
-      <button class="menu" onclick="openClose()" title="> open menu">.menu<!-- menu icon --></button>
-      <div class="menuBG hidden" id="menuNav">
-        <div class="menuWP">
-          <div class="menuC" onclick="openClose()" title="> close">
-            <svg class="x" viewBox="0 0 20 20"><polygon points="12.5 20 12.5 12.5 20 12.5 20 7.5 12.5 7.5 12.5 0 7.5 0 7.5 7.5 0 7.5 0 12.5 7.5 12.5 7.5 20 12.5 20" style="fill:#f8f8f8"/></svg>
+      <!-- menu button -->
+      <button class="m" onclick="oC()" type="button" name="menu">
+        <span class="md">.menu</span>
+        <span class="mm">.m</span>
+      </button>
+      <!-- menu open -->
+      <div class="mBG h" id="mNV">
+        <div class="mWP">
+          <div class="mCB" onclick="oC()">
+            <svg class="x" viewBox="0 0 20 20">
+              <polygon points="12.5 20 12.5 12.5 20 12.5 20 7.5 12.5 7.5 12.5 0 7.5 0 7.5 7.5 0 7.5 0 12.5 7.5 12.5 7.5 20 12.5 20" style="fill:#f8f8f8" /></svg>
           </div>
           <ul>
             <li><a href="index.html">> INTRO</a></li>
@@ -35,27 +41,52 @@
         </div>
       </div>
     </header>
-
-    <div class="welcomeWP">
-      <P class="welcome" id="type" title="Hello World!"></P>
-    </div>
-    <p class="smallW">> W<br>ELC<br>OM<br>E</p>
-
-    <button class="more" title="> latest projects" onclick="scrollToLatest()">.more</button>
-  </section>
-  <section id="latest">
-    <!-- section 2 -->
-    <div class="latestWP">
-      <div class="thumbnail">
-
+    <!-- main -->
+    <main>
+      <!-- welcome text -->
+      <div class="wWP">
+        <p class="w" id="t"></p>
       </div>
-      <button class="view" type="button" name="view" onclick="window.location.href='pages/projects.html'">> latest project</button>
-    </div>
-    <button class="top" type="button" name="top" title="> up" onclick="toTheTop()">.top</button>
-
-  </section>
-
+      <!-- more button -->
+      <button class="lB" onclick="olp()" type="button" name="latest">.latest</button>
+    </main>
+  <!-- script  -->
   <script src="script/main.js"></script>
 </body>
 
 </html>
+
+<!--
+
+class/id short names
+
+ico = icon
+m = menu
+mB = menu blue
+md = menu desktop
+mm = menu mobile
+mBG = menu background
+h = hidden
+s = show
+mNV = menu navigation
+mWP = menu wrapper
+mCB = menu close button
+x = close button svg
+wWP = welcome wrapper
+w = welcome
+t = type effect
+lB = more button
+tb = thumbnail
+vl = view latest
+tB = top button
+pWP = projects wrapper
+
+functions short names
+
+bti = back to index
+oC = open close toggle
+stl = scroll to latest
+stt = scroll to top
+olp = open latest project
+
+-->
