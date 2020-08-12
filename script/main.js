@@ -1,4 +1,4 @@
-window.onblur = function() { document.title = 'come back!'; }
+window.onblur = function() { document.title = 'Come Back!'; }
 window.onfocus = function() { document.title = 'IRP'; }
 
 function oC() {
