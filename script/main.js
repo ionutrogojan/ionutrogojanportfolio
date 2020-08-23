@@ -20,6 +20,10 @@ function olp() {
   window.location.href='pages/projects.html';
 }
 
+function btp() {
+  window.location.href='../pages/projects.html';
+}
+
 let i = 0;
 let txt = "> WELCOME"
 let speed = 200;
