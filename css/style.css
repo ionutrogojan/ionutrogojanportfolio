@@ -6,7 +6,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: gothBold, Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   text-decoration: none;
   list-style: none;
@@ -14,14 +14,6 @@
   scroll-behavior: smooth;
   margin: 0;
   outline: none;
-}
-
-/* CUSTOM FONT */
-@font-face {
-  font-family: 'gothBold';
-  src: url(../fonts/Goth-Bold.ttf);
-  font-style: normal;
-  font-weight: 100;
 }
 
 /* BODY INDEX */
