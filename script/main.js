@@ -1,5 +1,5 @@
 window.onblur = function() { document.title = 'come back!'; }
-window.onfocus = function() { document.title = 'IRP Cleanup'; }
+window.onfocus = function() { document.title = 'IRP'; }
 
 function oC() {
   document.getElementById('mNV').classList.toggle('h');
