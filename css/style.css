@@ -7,7 +7,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
   list-style: none;
   overflow-x: hidden;
@@ -82,10 +82,12 @@ header {
 
 .md {
   display: block;
+  font-weight: 700;
 }
 
 .mm {
   display: none;
+  font-weight: 700;
 }
 
 /* MENU OPEN */
@@ -159,6 +161,7 @@ ul li {
 ul li a {
   color: #110f26;
   font-size: 100px;
+  font-weight: 700;
 }
 
 ul li a:hover {
@@ -179,6 +182,7 @@ ul li a:hover {
 .w {
   width: 100%;
   font-size: 250px;
+  font-weight: 700;
   display: flex;
   justify-content: center;
 }
