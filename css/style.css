@@ -439,6 +439,7 @@ ul li a:hover {
 }
 
 .spB{
+  cursor: pointer;
   color: #f8f8f8;
   background-color: #1089ff;
 }
