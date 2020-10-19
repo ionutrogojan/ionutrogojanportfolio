@@ -191,7 +191,7 @@ ul li a:hover {
   position: absolute;
   width: 100%;
   height: auto;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
